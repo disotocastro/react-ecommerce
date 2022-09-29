@@ -1,0 +1,27 @@
+{
+  "name": "react-ecommerce",
+  "version": "1.0.0",
+  "description": "E-Commerce Using React\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[D\u001b[D\u001b[u\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/disotocastro/react-ecommerce.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "React"
+  ],
+  "author": "Diego Soto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/disotocastro/react-ecommerce/issues"
+  },
+  "homepage": "https://github.com/disotocastro/react-ecommerce#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
