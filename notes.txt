@@ -1,0 +1,7 @@
+TODO:
+	- Crear una pagina de error 404
+	
+	
+Atajos React:
+imr -> import react
+rsc -> state less
