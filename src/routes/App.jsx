@@ -7,6 +7,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './../pages/Home.jsx';
 import NotFound from './../pages/NotFound.jsx';
 import SingUp from './../containers/SingUp';
+import CreateAccount from './../containers/CreateAccount';
+import EditAccount from './../containers/EditAccount';
+
 
 
 
@@ -18,6 +21,8 @@ const App = () => {
 					<Route exact path="/" element={<Home />} />
 					<Route exact path="/login" element={<Login />} />
 					<Route exact path="/sing-up" element={<SingUp />} />
+					<Route exact path="/create-account" element={<CreateAccount />} />
+					<Route exact path="/edit-account" element={<EditAccount />} />
 					<Route exact path="/recovery-password" element={<RecoveryPassword />} />
 					<Route path="*" element={<NotFound />} />
 					{/* Archivo por default */}
