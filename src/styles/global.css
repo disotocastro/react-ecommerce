@@ -1,12 +1,4 @@
 body {
-  margin: 0;
-  font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
 }
-
-/* 
-  Este archivo es .css
-  sin embargo, no hay ningún problema
-  con trabajar css + sass, mezclados. 
-
-  Esto se configura en la configuracion del proyecto.
-*/

@@ -1,12 +1,13 @@
-// Parte principal del proyecto
 import React from 'react';
+import Header from '../components/Header';
 
-const Layout = ({children}) => {
-  return ( 
-    <div className="Layout">
-      {children}
-    </div>
-   );
+const Layout = ({ children }) => {
+	return (
+		<div className="Layout">
+			<Header />
+			{children}
+		</div>
+	);
 }
-// Layaout recibe componentes hijos
+
 export default Layout;
