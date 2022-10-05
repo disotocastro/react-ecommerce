@@ -1,7 +1,7 @@
 import { useState } from "react";
+
 const initialState = {
   cart: [],
-
 }
 
 const useInitialState = () => {
@@ -9,14 +9,16 @@ const useInitialState = () => {
 
   const addToCart = (payload) => {
     setState({
-      ...state,//mantener los elementos anteriores
+      ...state,
+      // ... sirve para mantener items anteriores
       cart: [...state.cart, payload]
-      // mantenga lo que tenia el state.cart y agregele el payload
     });
   };
+
   return {
-    state, addToCart
+    state,
+    addToCart
   }
 }
 
-export default useInitialState
+export default useInitialState;
