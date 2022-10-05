@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import axios from 'axios'
-
-
+import axios from 'axios';
 
 const useGetProducts = (API) => {
   const [products, setProducts] = useState([]);
@@ -12,7 +10,6 @@ const useGetProducts = (API) => {
   }, []);
 
   return products;
-
-}
+};
 
 export default useGetProducts;

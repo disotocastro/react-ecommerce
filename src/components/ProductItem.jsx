@@ -1,12 +1,15 @@
-import React, { useState } from 'react'; // Hook para trabajar con el estado
+import React, { useContext } from 'react'; // Hook para trabajar con el estado
 import '../styles/ProductItem.scss';
 import add_to_cart from '@icons/bt_add_to_cart.svg';
+import AppContext from '../context/AppContext';
 
 const ProductItem = ({ product }) => {
 	//estado y funcion modificadora
-	const [cart, setCart] = useState([]); // Valor inicial de Cart
-	const handleClick = () => {
-		setCart([]);
+
+	const { addToCart } = useContext(AppContext);
+
+	const handleClick = item => {
+		addToCart(item);
 	}
 
 	return (
@@ -17,7 +20,7 @@ const ProductItem = ({ product }) => {
 					<p>${product.price}</p>
 					<p>{product.title}</p>
 				</div>
-				<figure onClick={handleClick} >
+				<figure onClick={() => handleClick(product)} >
 					<img src={add_to_cart} alt="" />
 				</figure>
 			</div>
