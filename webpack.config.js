@@ -12,7 +12,16 @@ module.exports = {
     },
     mode: 'development',
     resolve: { // extensión de archivos a tomar en cuenta
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx'],
+        alias: {
+            '@components': path.resolve(__dirname, 'src/components/'),
+            '@containers': path.resolve(__dirname, 'src/containers/'),
+            '@pages': path.resolve(__dirname, 'src/pages/'),
+            '@routes': path.resolve(__dirname, 'src/routes/'),
+            '@styles': path.resolve(__dirname, 'src/styles/'),
+            '@icons': path.resolve(__dirname, 'src/assets/icons/'),
+            '@logos': path.resolve(__dirname, 'src/assets/logos/'),
+        }
     },
     module: { // loaders para cada tipo de archivo
         rules: [ // reglas para usar
@@ -30,14 +39,18 @@ module.exports = {
                         loader: 'html-loader' // loader a usar
                     }
                 ]
-            },{
+            }, {
                 test: /\.(css|s[ac]ss)$/i,
                 use: [
                     "style-loader",
                     "css-loader",
                     "sass-loader",
                 ]
-            }	
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                type: 'asset'
+            }
         ]
     },
     plugins: [ // plugins 
@@ -51,10 +64,10 @@ module.exports = {
     ],
     devServer: {
         static: {
-          directory: path.join(__dirname, 'public'),
-          },
+            directory: path.join(__dirname, 'public'),
+        },
         compress: true,
         port: 3005,
         historyApiFallback: true
-      }
+    }
 }
