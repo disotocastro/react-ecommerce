@@ -1,13 +1,6 @@
 TODO:
 	- Crear una pagina de error 404
 	
-
-Separar
-	- Pages: 
-	- Container: 4, 5, 6, 7, 9, 10, 12
-	- Components: 8, 11
-	
-	
 Atajos React:
 imr -> Import react
 rsc -> State less
