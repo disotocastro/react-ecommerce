@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "E-Commerce Using React\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[D\u001b[D\u001b[u\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C",
   "main": "src/index.js",
+  "homepage": "https://disotocastro.github.io/react-ecommerce",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --open",
-    "build": "webapck --mode production"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d dist",
+    "start": "webpack serve",
+    "build": "webpack --mode production"
   },
   "repository": {
-    "type": "git",
+    "type": "git",  
     "url": "git+https://github.com/disotocastro/react-ecommerce.git"
   },
   "keywords": [
@@ -21,7 +25,6 @@
   "bugs": {
     "url": "https://github.com/disotocastro/react-ecommerce/issues"
   },
-  "homepage": "https://github.com/disotocastro/react-ecommerce#readme",
   "dependencies": {
     "@babel/core": "^7.19.3",
     "@babel/plugin-transform-runtime": "^7.19.1",
@@ -40,6 +43,7 @@
   },
   "devDependencies": {
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "mini-css-extract-plugin": "^2.6.1",
     "sass": "^1.55.0",
     "sass-loader": "^13.0.2",
